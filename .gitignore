@@ -1,8 +1,12 @@
 *.gem
 *.rbc
 /.config
+/.bundle/
+/.yardoc
+/_yardoc/
 /coverage/
 /InstalledFiles
+/doc/
 /pkg/
 /spec/reports/
 /spec/examples.txt
