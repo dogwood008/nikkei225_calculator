@@ -13,3 +13,10 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+module ::RSpec
+  module_function
+  def root
+    @spec_root ||= Pathname.new(__dir__)
+  end
+end
