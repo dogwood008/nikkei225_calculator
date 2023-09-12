@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = 'Calc Nikkei 225'
   spec.description = spec.summary
   spec.homepage = 'https://github.com/dogwood008/nikkei225_calculator'
-  spec.required_ruby_version = '>= 2.6.0'
+  spec.required_ruby_version = '>= 3.1.0'
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = spec.homepage

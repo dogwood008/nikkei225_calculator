@@ -9,4 +9,10 @@ gem 'rake', '~> 13.0'
 
 gem 'rspec', '~> 3.0'
 
+# typing
+gem 'rbs'
+gem 'steep'
+gem 'typeprof'
+
+# rubocop
 gem 'rubocop', '~> 1.21'

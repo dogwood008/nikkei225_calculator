@@ -1,4 +1,13 @@
+# TypeProf 0.21.8
+
+# Classes
 module Nikkei225Calculator
   VERSION: String
-  # See the writing guide of rbs: https://github.com/ruby/rbs#guides
+
+  class Csv
+    attr_reader adj_factor: Array[Array[String?]]
+    attr_reader avg_weight: Array[Array[String?]]
+    def self.converter_proc: -> Proc
+    def initialize: (adj_factor: String, avg_weight: String) -> void
+  end
 end
