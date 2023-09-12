@@ -16,7 +16,8 @@ end
 
 module ::RSpec
   module_function
+
   def root
-    @spec_root ||= Pathname.new(__dir__)
+    @root ||= Pathname.new(__dir__)
   end
 end

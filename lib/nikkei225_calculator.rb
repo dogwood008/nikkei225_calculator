@@ -6,12 +6,14 @@ require 'bigdecimal'
 require_relative 'nikkei225_calculator/version'
 
 module Nikkei225Calculator
+  # Use this to load from CSV filepath.
   class Csv
     attr_reader :adj_factor, :avg_weight
 
     def self.converter_proc
-      Proc.new do |field, field_info|
+      proc do |field, _field_info|
         next field unless field.include?('.')
+
         BigDecimal(field.delete_suffix('%'))
       end
     end

@@ -1,16 +1,18 @@
+# frozen_string_literal: true
+
 D = Steep::Diagnostic
 
 target :lib do
-  signature "sig"
+  signature 'sig'
 
-  check "lib"                       # Directory name
+  check 'lib' # Directory name
   # ignore "lib/templates/*.rb"
 
   # library "pathname"              # Standard libraries
-  library "csv"           # Gems
-  library "bigdecimal"           # Gems
+  library 'csv' # Gems
+  library 'bigdecimal' # Gems
 
-  configure_code_diagnostics(D::Ruby.default)      # `default` diagnostics setting (applies by default)
+  configure_code_diagnostics(D::Ruby.default) # `default` diagnostics setting (applies by default)
   # configure_code_diagnostics(D::Ruby.strict)       # `strict` diagnostics setting
   # configure_code_diagnostics(D::Ruby.lenient)      # `lenient` diagnostics setting
   # configure_code_diagnostics(D::Ruby.silent)       # `silent` diagnostics setting
@@ -20,9 +22,9 @@ target :lib do
 end
 
 target :test do
-  signature "sig", "sig-private"
+  signature 'sig', 'sig-private'
 
-  check "test"
+  check 'test'
 
   # library "pathname"              # Standard libraries
 end
